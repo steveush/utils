@@ -1,0 +1,12 @@
+export { default as isArray } from "./isArray.js";
+export { default as isBoolean } from "./isBoolean.js";
+export { default as isFunction } from "./isFunction.js";
+export { default as isNonNullable } from "./isNonNullable.js";
+export { default as isNull } from "./isNull.js";
+export { default as isNumber } from "./isNumber.js";
+export { default as isObject } from "./isObject.js";
+export { default as isPlainObject } from "./isPlainObject.js";
+export { default as isRegExp } from "./isRegExp.js";
+export { default as isString } from "./isString.js";
+export { default as isSymbol } from "./isSymbol.js";
+export { default as isUndefined } from "./isUndefined.js";

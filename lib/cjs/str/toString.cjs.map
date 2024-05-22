@@ -1,0 +1,1 @@
+{"version":3,"file":"toString.cjs","sources":["../../../src/str/toString.js"],"sourcesContent":["const toString = value => Object.prototype.toString.call( value );\r\n\r\nexport default toString;"],"names":["value","Object","prototype","toString","call"],"mappings":"4BAAiBA,GAASC,OAAOC,UAAUC,SAASC,KAAMJ"}

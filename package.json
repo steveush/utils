@@ -1,0 +1,50 @@
+{
+  "name": "@steveush/utils",
+  "version": "0.0.1",
+  "description": "Utility methods and classes.",
+  "type": "module",
+  "main": "./lib/cjs/index.cjs",
+  "module": "./lib/es/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    "types": "./types/index.d.ts",
+    "require": "./lib/cjs/index.cjs",
+    "default": "./lib/es/index.js"
+  },
+  "imports": {
+    "#jest-helpers": "./jest/helpers.js"
+  },
+  "files": [
+    "./lib/**/*",
+    "./types/**/*"
+  ],
+  "sideEffects": false,
+  "browserslist": [
+    "defaults"
+  ],
+  "engines": {
+    "node": ">=13.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "develop": "rollup -c -w --environment BUILD:develop",
+    "test": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js",
+    "test@type-checks": "npm run test -- --group=type-checks",
+    "test@obj": "npm run test -- --group=obj",
+    "test@str": "npm run test -- --group=str"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/runtime": "^7.24.5",
+    "@jest/globals": "^29.7.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@steveush/rollup-utils": "^0.0.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-runner-groups": "^2.2.0",
+    "rollup": "^4.17.2"
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"isRegExp.js","sources":["../../../src/type-checks/isRegExp.js"],"sourcesContent":["const isRegExp = value => value instanceof RegExp;\r\n\r\nexport default isRegExp;"],"names":["isRegExp","value","RegExp"],"mappings":"AAAA,MAAMA,EAAWC,GAASA,aAAiBC"}

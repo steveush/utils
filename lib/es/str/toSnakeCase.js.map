@@ -1,0 +1,1 @@
+{"version":3,"file":"toSnakeCase.js","sources":["../../../src/str/toSnakeCase.js"],"sourcesContent":["import toPartsLowerCase from \"./toPartsLowerCase.js\";\r\n\r\nconst toSnakeCase = str => toPartsLowerCase( str ).join( \"_\" );\r\n\r\nexport default toSnakeCase;"],"names":["toSnakeCase","str","toPartsLowerCase","join"],"mappings":"qCAEA,MAAMA,EAAcC,GAAOC,EAAkBD,GAAME,KAAM"}

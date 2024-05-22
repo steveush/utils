@@ -1,0 +1,1 @@
+{"version":3,"file":"toKebabCase.js","sources":["../../../src/str/toKebabCase.js"],"sourcesContent":["import toPartsLowerCase from \"./toPartsLowerCase.js\";\r\n\r\nconst toKebabCase = str => toPartsLowerCase( str ).join( \"-\" );\r\n\r\nexport default toKebabCase;"],"names":["toKebabCase","str","toPartsLowerCase","join"],"mappings":"qCAEA,MAAMA,EAAcC,GAAOC,EAAkBD,GAAME,KAAM"}

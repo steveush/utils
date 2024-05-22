@@ -1,0 +1,1 @@
+{"version":3,"file":"isNull.cjs","sources":["../../../src/type-checks/isNull.js"],"sourcesContent":["const isNull = value => value === null;\r\n\r\nexport default isNull;"],"names":["value"],"mappings":"4BAAeA,GAAmB,OAAVA"}

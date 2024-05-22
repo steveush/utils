@@ -1,0 +1,1 @@
+{"version":3,"file":"isUndefined.js","sources":["../../../src/type-checks/isUndefined.js"],"sourcesContent":["const isUndefined = value => typeof value === \"undefined\" || value === undefined;\r\n\r\nexport default isUndefined;"],"names":["isUndefined","value","undefined"],"mappings":"AAAMA,MAAAA,EAAcC,QAA0B,IAAVA,QAAmCC,IAAVD"}
