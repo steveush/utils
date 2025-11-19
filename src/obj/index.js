@@ -1,4 +1,7 @@
+export { default as cleanObject } from "./cleanObject.js";
+export { default as clone } from "./clone.js";
 export { default as combine } from "./combine.js";
+export { default as distinct } from "./distinct.js";
 export { default as getProperty } from "./getProperty.js";
 export { default as hasKeys } from "./hasKeys.js";
 export { default as merge } from "./merge.js";

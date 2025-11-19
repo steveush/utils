@@ -7,4 +7,8 @@
  *
  * @category Object Helpers
  */
-export default function pluck( obj: Record<string, any>, keys: string | string[] | ( ( value: any, key: string, iter: object ) => boolean) ): Record<string, any>;
+export default function pluck( obj: {
+    [ key: string ]: any
+}, keys: string | string[] | ( ( value: any, key: string, iter: object ) => boolean ) ): {
+    [ key: string ]: any
+};

@@ -112,3 +112,13 @@ export type Merge<T extends Record<string, any>, S extends Record<string, any>[]
 export type Combine<T extends any[], S extends any[]> = Expand<( ArrayType<T> | ArrayType<S> )[]>;
 
 //endregion
+
+//region NonUndefined<T> - Any value except undefined
+
+type NonUndefined<T> = T extends undefined ? never : T;
+
+//endregion
+
+type CleanObject<T> = T extends {[key: string]: any} ? {
+    [ P in keyof T ]: NonUndefined<T<P>>
+} : undefined;

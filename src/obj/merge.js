@@ -5,7 +5,7 @@ const merge = ( target, ...source ) => {
     if ( !isPlainObject( target ) )
         target = {};
 
-    for ( const src of source.filter( isPlainObject ) ) {
+    for ( const src of source.filter( src => isPlainObject( src ) ) ) {
         for ( const [ key, value ] of Object.entries( src ) ) {
             if ( isPlainObject( value ) ) {
                 target[ key ] = merge( target[ key ], value );

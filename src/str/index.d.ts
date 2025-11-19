@@ -1,7 +1,9 @@
 export { default as bisect } from "./bisect";
+export { default as capitalize } from "./capitalize";
 export { default as escapeHTML } from "./escapeHTML";
 export { default as format } from "./format";
 export { default as propertyPath } from "./propertyPath";
+export { default as strim } from "./strim";
 export { default as toCamelCase } from "./toCamelCase";
 export { default as toKebabCase } from "./toKebabCase";
 export { default as toPartsLowerCase } from "./toPartsLowerCase";

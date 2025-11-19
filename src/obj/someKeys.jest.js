@@ -49,4 +49,15 @@ describe( 'someKeys', () => {
         expect( someKeys( target, { prop1: isString, prop2: isNumber } ) ).toEqual( true );
     } );
 
+    test( "testing partial", () => {
+        const target = { topLeft: "with-value" };
+        const keys = {
+            topLeft: val => isString( val, true ),
+            topRight: val => isString( val, true ),
+            bottomRight: val => isString( val, true ),
+            bottomLeft: val => isString( val, true )
+        };
+        expect( someKeys( target, keys ) ).toBe( true );
+    } );
+
 } );

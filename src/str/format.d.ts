@@ -12,5 +12,7 @@
  * is a plain old JavaScript object as it is used to match named placeholders.
  *
  * This method does not perform a simultaneous replacement of placeholders.
+ *
+ * @category String Helpers
  */
 export default function format( format: string, arg: any | Record<string, any>, ...argN?: any[] ): string;

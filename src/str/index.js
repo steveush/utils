@@ -1,7 +1,9 @@
 export { default as bisect } from "./bisect.js";
+export { default as capitalize } from "./capitalize.js";
 export { default as escapeHTML } from "./escapeHTML.js";
 export { default as format } from "./format.js";
 export { default as propertyPath } from "./propertyPath.js";
+export { default as strim } from "./strim.js";
 export { default as toCamelCase } from "./toCamelCase.js";
 export { default as toKebabCase } from "./toKebabCase.js";
 export { default as toPartsLowerCase } from "./toPartsLowerCase.js";

@@ -3,9 +3,10 @@ import isUndefined from "../type-checks/isUndefined.js";
 import isArray from "../type-checks/isArray.js";
 import isFunction from "../type-checks/isFunction.js";
 import isString from "../type-checks/isString.js";
+import isObject from "../type-checks/isObject.js";
 
 const someKeys = ( target, keys ) => {
-    if ( isPlainObject( target ) ) {
+    if ( isObject( target ) ) {
         const targetKeys = Object.keys( target );
         if ( isUndefined( keys ) ) return targetKeys.length > 0;
         if ( isString( keys ) ) return targetKeys.includes( keys );

@@ -1,4 +1,7 @@
+export { default as cleanObject } from "./cleanObject";
+export { default as clone } from "./clone";
 export { default as combine } from "./combine";
+export { default as distinct } from "./distinct";
 export { default as getProperty } from "./getProperty";
 export { default as hasKeys } from "./hasKeys";
 export { default as merge } from "./merge";
